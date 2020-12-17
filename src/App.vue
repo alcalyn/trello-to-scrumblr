@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div>
+        <main>
+            <TrelloToScrumblr />
+        </main>
+
+        <footer>
+            Julien Maulny
+            -
+            <a href="https://twitter.com/alcalyn_" target="_blank">@alcalyn</a>
+            -
+            <a href="https://github.com/alcalyn/trello-to-scrumblr" target="_blank">See project on Github</a>
+        </footer>
+    </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+import TrelloToScrumblr from './components/TrelloToScrumblr.vue';
 
 @Options({
-  components: {
-    HelloWorld,
-  },
+    components: {
+        TrelloToScrumblr,
+    },
 })
 export default class App extends Vue {}
 </script>
 
 <style lang="stylus">
 #app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+    font-family Avenir, Helvetica, Arial, sans-serif
+    -webkit-font-smoothing antialiased
+    color #2c3e50
+    margin 60px auto
+    max-width 600px
+
+footer
+    margin-top 8em
+    text-align center
+    font-size 0.7em
+
+    a
+        text-decoration none
+
+        &:hover
+            text-decoration underline
 </style>

@@ -1,4 +1,4 @@
-# trello-to-scrumblr
+# Trello to Scrumblr
 
 ## Project setup
 ```
